@@ -51,7 +51,7 @@ function App() {
         <Routes>
             <Route exact path="/" element={<Register />} />
             <Route exact path="/Login" element={<Login />} />
-            <Route exact path="/Home" element={<Home />} />
+            <Route exact path="/home" element={<Home />} />
             <Route exact path="/edit/:id" element={<Formedit/>} />
         </Routes>
 

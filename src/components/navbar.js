@@ -23,7 +23,7 @@ function MenuBar() {
         <div className={style.nav1}>
             <Navbar>
                 <Container>
-                    <Navbar.Brand href="/Home" className={style.Brand}>Merchandise Data App</Navbar.Brand>
+                    <Navbar.Brand href="/home" className={style.Brand}>Merchandise Data App</Navbar.Brand>
                     <Navbar.Toggle />
                     <Navbar.Collapse className="justify-content-end">
                         <Button className={style.navbutt1} onClick={() => setModalShow(true)}>

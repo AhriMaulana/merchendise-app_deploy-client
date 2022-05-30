@@ -84,7 +84,7 @@ function Formedit(props) {
             );
             setMessage(alert);
 
-            navigate('/Home');
+            navigate('/home');
         } catch (error) {
             const alert = (
                 <Alert variant="danger" className="py-1">
@@ -99,7 +99,7 @@ function Formedit(props) {
 
     const navigasi = useNavigate()
     const handleHome = () => {
-        navigasi("/Home")
+        navigasi("/home")
     }
 
     return (

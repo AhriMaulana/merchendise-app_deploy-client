@@ -64,7 +64,7 @@ function Forminput(props) {
             setMessage(alert);
             
 
-        navigate('/Home');
+        navigate('/home');
         } catch (error) {
             const alert = (
                 <Alert variant="danger" className="py-1">
@@ -77,9 +77,9 @@ function Forminput(props) {
         }
     };
 
-    function refreshPage() {
-        window.location.reload();
-    }
+    // function refreshPage() {
+    //     window.location.reload();
+    // }
 
     return (
         <Modal
@@ -143,7 +143,7 @@ function Forminput(props) {
                         Add
                     </Button>
 
-                    <Button variant="primary" onClick={refreshPage} className={style.button1}>
+                    <Button variant="primary" onClick={() => navigate('/home')} className={style.button1}>
                         Back
                     </Button>
                 </Form>

@@ -63,7 +63,7 @@ function Login() {
       //   );
       //   setMessage(alert);
       // }
-    navigate('/Home')
+    navigate('/home')
     } catch (error) {
       const alert = (
         <Alert variant="danger" className="py-1">
