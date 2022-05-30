@@ -62,9 +62,9 @@ function Forminput(props) {
                 </Alert>
             );
             setMessage(alert);
-            
+            navigate('/home');
 
-        navigate('/home');
+        
         } catch (error) {
             const alert = (
                 <Alert variant="danger" className="py-1">
