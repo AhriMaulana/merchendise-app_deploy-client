@@ -1,0 +1,46 @@
+.latar {
+    background-color: rgb(235, 226, 218);
+    height: 920px;
+    display: block;
+    padding: 50px;
+    width: 100%;
+}
+
+.subjudul {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+
+.forminti {
+    width: 500px;
+    margin-left: 665px;
+    margin-bottom: 80px;
+}
+
+.button1 {
+    margin-top: 20px;
+    margin-left: 10px;
+    height: 40px;
+    width: 80px;
+}
+
+.button {
+    margin-top: 20px;
+    height: 40px;
+    width: 80px;
+}
+
+.label1 {
+    font-size: 24px;
+
+}
+
+.control {
+    height: 44px;
+    font-size: 20px;
+    border-radius: 10px;
+}

@@ -1,0 +1,29 @@
+.nav1 {
+    background-color: rgb(231, 203, 179);
+    height: 15vh;
+    padding-top: 30px;
+}
+
+.Brand {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.navbutt1 {
+    margin-right: 20px;
+    font-size: 25px;
+    font-weight: 500;
+    background: none;
+    border: none;
+    color: black;
+    padding: 10px;
+}
+
+.navbutt2 {
+    font-size: 25px;
+    font-weight: 500;
+    background: none;
+    border: none;
+    color: black;
+    padding: 10px;
+}
