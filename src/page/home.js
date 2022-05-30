@@ -37,7 +37,7 @@ function Home() {
     };
     const deleteById = async (id) => {
         try {
-            await API.delete(`/item/${id}`);
+            await API.delete(`/item/${id}`, config);
             loadItem();
         } catch (error) {
             console.log(error);

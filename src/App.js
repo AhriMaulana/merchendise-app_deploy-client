@@ -43,9 +43,9 @@ function App() {
         }
     };
 
-    // useEffect(() => {
-    //     checkUser();
-    // }, []);
+    useEffect(() => {
+        checkUser();
+    }, []);
     return (
 
         <Routes>

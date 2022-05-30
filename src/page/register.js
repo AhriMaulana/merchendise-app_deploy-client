@@ -32,6 +32,7 @@ function Register() {
             // Create Configuration Content-type here ...
             // Content-type: application/json
             const config = {
+                method: "POST",
                 headers: {
                     "Content-type": "application/json"
                 }
@@ -41,7 +42,7 @@ function Register() {
             const body = JSON.stringify(form)
 
             // Insert data user to database here ...
-            const response = await API.post('/register', body, config)
+            const response = await API.post('/register', config)
             console.log(response);
 
             // Notification
