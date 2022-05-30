@@ -3,7 +3,7 @@ import Login from './page/login';
 import Register from "./page/register";
 import Home from "./page/home";
 import Formedit from "./components/editpage";
-import { API } from './config/api'
+import { API, setAuthToken } from './config/api'
 import React, { useEffect, useContext } from "react";
 import { UserContext } from "../src/contex/userContext";
 
@@ -12,13 +12,13 @@ function App() {
     const navigate = useNavigate();
     const [state, dispatch] = useContext(UserContext);
 
-    // useEffect(() => {
-    //     if (localStorage.token) {
-    //         setAuthToken(localStorage.token);
-    //     } else {
-    //         navigate('/')
-    //     }
-    // }, [state]);
+    useEffect(() => {
+        if (localStorage.token) {
+            setAuthToken(localStorage.token);
+        } else {
+            navigate('/')
+        }
+    }, [state]);
 
     const checkUser = async () => {
         try {

@@ -2,7 +2,7 @@ import { Button, Form, Alert } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import style from '../style/login.module.css';
 import { useNavigate } from 'react-router-dom';
-import { API } from '../config/api'
+import { API, setAuthToken } from '../config/api'
 import { UserContext } from "../contex/userContext";
 import React, {useState, useContext} from 'react';
 
@@ -45,7 +45,7 @@ function Login() {
       const response = await API.post('/login', body, config)
       // console.log(response)
 
-      // setAuthToken(response.data.data.token);
+      setAuthToken(response.data.data.token);
       // console.log(response.data.data);
 
       dispatch({
