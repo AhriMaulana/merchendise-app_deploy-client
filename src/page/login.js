@@ -33,18 +33,16 @@ function Login() {
       // Create Configuration Content-type here ...
       // Content-type: application/json
       const config = {
-        method: "POST",
         headers: {
           "Content-type": "application/json"
-        },
-        body:body,
+        }
       }
 
       // Convert form data to string here ...
       const body = JSON.stringify(login)
 
       // Insert data user for login process here ...
-      const response = await API.post('/login', config)
+      const response = await API.post('/login', body, config)
       // console.log(response)
 
       // setAuthToken(response.data.data.token);
