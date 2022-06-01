@@ -70,7 +70,7 @@ function Home() {
             {item.map((data) => (
                 <Col style={{ display: 'inline-grid'}} key={data.id}>
                     <Card style={{ width: '30rem', height: 'max-content', marginLeft: "110px", marginTop: "80px", marginBottom: "50px", border: 'none', borderRadius: '20px', padding: '30px' }}>
-                        <Card.Img variant="top" src={`http://localhost:5000/uploads/${data.image}`} alt=":'(" className={styles.imgitm} />
+                        <Card.Img variant="top" src={data.image} alt=":'(" className={styles.imgitm} />
                         <Card.Body>
                             <Card.Title className={styles.title}>{data.namabarang}</Card.Title>
                             <Card.Text className={styles.text}>
